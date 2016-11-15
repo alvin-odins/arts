@@ -42,4 +42,9 @@ Rails.application.configure do
   #needed for active admin
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+  #needed for paperclip
+  # Paperclip.options[:command_path] = "/c/WINDOWS/system32/convert.exe"
+  Paperclip.options[:command_path] = 'C:/Program Files/ImageMagick-6.8.5-Q16'
+
+
 end

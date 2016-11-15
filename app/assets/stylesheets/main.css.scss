@@ -1,0 +1,176 @@
+* {
+	box-sizng: border-box;
+}
+
+body{
+	background-color: #f5f8fa;
+}
+
+h1,h2,h3,h5,h6{
+	text-align: center;
+}
+
+.fluid-container{
+	position: relative;
+	height: 100%;
+}
+
+.fluid-container .row:first-child{
+	margin-right: 0;
+}
+
+
+.nav_fit{
+  margin-top: 70px;
+
+}
+
+body{
+  font-family: 'Arial', sans-serif;
+  background: #FFF;
+  line-height: 1.6em;
+  padding-bottom: 65px;
+}
+
+.navbar{
+  overflow: auto;
+  min-height: 0;
+  background: #2c3e50;
+  color: #FFF;
+  font-size: 18px;
+  border: 0;
+  border-radius: 0;
+}
+
+.navbar h1{
+  margin: -7px 0 0 0;
+  padding: 0;
+}
+
+.navbar a{
+  color: #FFF !important;
+}
+
+.navabr a:hover{
+  color: #FF953F
+}
+.navbar a.navbar-brand:hover{
+  color: #FFF !important;
+}
+.navbar ul{
+  margin: 5px 0 10px 0;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background: none;
+    color: #FF953F !important;
+}
+
+.search-form {
+  margin-top: 15px;
+  padding: 0px;
+}
+
+.search-form input[type='text']{
+  border-radius: 0px;
+  height: 35px;
+}
+
+.search-form .btn {
+  border: 0;
+  height: 35px;
+  margin: 0;
+  border-radius: 0px;
+  margin-left: -5px;
+}
+
+.search-form .form-control{
+  background: #F4F4F4;
+  border: 1px solid #EEE;
+}
+
+.btn-primary{
+  background: #ff3512;
+  color: #FFF;
+}
+.btn:hover{
+  background: #CCC;
+}
+
+.post{
+  border: 1px #DDD solid;
+  background: #FFF;
+}
+.post img{
+  width: 100%;
+}
+.img-content{
+  padding: 20px;
+  box-sizing: border-box;
+}
+.post h3{
+  margin: 0;
+  padding: 0;
+}
+
+.post small{
+  background: teal;
+  color: #FFF;
+  display: block;
+  margin: 10px 0;
+  padding: 5px 10px;
+}
+
+
+/*                      */
+body, html, .home{
+  height: 100%;
+}
+
+.home {
+	position: relative;
+}
+
+ .home, .blur{
+
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.focus-container{
+	position: relative;
+  top: 5em;
+}
+
+.blur{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-position: center;
+	z-index: 99;
+	-webkit-filter: blur(10px);
+}
+
+
+.focus-box{
+	position: relative;
+	border-radius: 10px;
+	height: 10%;
+	text-align: center;
+	padding: 40px;
+	background: rgba(34,34,34,0.75);
+	margin-top: 5em;
+	z-index: 100;
+}
+
+.focus-box h1{
+	padding-bottom: 30px;
+	color: white;
+}
+
+.hov:hover{
+	color: #ffffff;
+	background-color: #128f76;
+	border-color: #11866f;
+}

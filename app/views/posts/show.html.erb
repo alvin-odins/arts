@@ -1,7 +1,42 @@
 <h2><%= @post.title %></h2>
 
-<% if @post.image? %>
-  <p>This art is done</p>
-<% else %>
-    <p>This art is still in developments</p>
-<% end %>
+<%# if @post.image? %>
+  <!-- <p>This art is done</p> -->
+<%# else %>
+    <!-- <p>This art is still in developments</p> -->
+<%# end %>
+
+<%= image_tag @post.image, :id => "post-image" %>
+
+<div class="post-description">
+  <% if @post.description %>
+    <%= simple_format @post.description %>
+  <% else %>
+    <p><em>No Description</em></p>
+  <% end %>
+
+  <p>
+    <strong>Title:</strong>
+    <%= @post.title %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @post.description %>
+  </p>
+
+  <p>
+    <strong>Measuremnt:</strong>
+    <%= @post.measurement %>
+  </p>
+
+  <p>
+    <strong>Artist:</strong>
+    <%= @post.artist %>
+  </p>
+
+  <p>
+    <strong>Category:</strong>
+    <%= @post.category %>
+  </p>
+</div>

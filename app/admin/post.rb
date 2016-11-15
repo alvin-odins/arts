@@ -12,6 +12,8 @@ ActiveAdmin.register Post do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
+
+
   index do
     # column :category
     column :title
@@ -28,6 +30,15 @@ ActiveAdmin.register Post do
     column :image
     actions
   end
+
+  # index :as => :grid do |post|
+  #   div do
+  #     a :href => admin_post_path(post) do
+  #       image_tag( post.image)
+  #     end
+  #   end
+  #   a truncate(post.title), :href => admin_post_path(post)
+  # end
 
   form html: { enctype: "multipart/form-data" } do |f|
     f.inputs "New Post", multipart: true do

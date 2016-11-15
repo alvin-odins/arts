@@ -8,10 +8,25 @@
 </head>
 <body>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+  <%= render 'partials/header' %>
 
-<%= yield %>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <% if flash[:notice] %>
+            <div class="alert alert-success">
+              <%= flash[:notice] %></div>
+          <% end %>
+
+          <% if flash[:alert] %>
+            <div class="alert alert-danger"><%= flash[:alert] %></div>
+          <% end %>
+        </div>
+      </div>
+      <%= yield %>
+    </div>
+
+  <%= render 'partials/footer' %>
 
 </body>
 </html>

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   resources :categories, :posts
 
-  root 'categories#index'
+  root 'posts#index'
 
   # get "/allcategories", to: 'categories#index'
 
