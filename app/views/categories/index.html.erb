@@ -1,0 +1,6 @@
+<h2>Posts Categrories</h2>
+<ul>
+  <% @categories.each do |category| %>
+  <li><%= link_to category.name, category %> (<%= category.posts.count %>)</li>
+  <% end %>
+</ul>
