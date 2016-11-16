@@ -66,6 +66,20 @@ ActiveAdmin.register Post do
     active_admin_comments
   end
 
+  controller do
+    def edit
+      @post = Post.find(params[:id])
+      render layout: false
+    end
+
+    # def update
+    #   @post = Post.find(params[:id])
+    #   @post.update(permit_params[:post])
+    #   render layout: false
+    # end
+
+  end
+
   permit_params :title, :description, :measurement, :artist, :category, :image
 
 end

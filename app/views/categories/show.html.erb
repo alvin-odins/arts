@@ -1,9 +1,12 @@
-<h2><%= @category.name %></h2>
+<div class="container nav_fit">
+  <h2><%= @category.name %></h2>
 
-<ul>
-  <% @category.posts.each do |post| %>
-  <li><%= link_to post.title, post %></li>
-  <% end %>
-</ul>
+  <ul>
+    <% @category.posts.each do |post| %>
+    <li><%= link_to post.title, post %></li>
+    <% end %>
+  </ul>
 
-<p><%= link_to "Back to Post Categories", categories_path %></p>
+  <p><%= link_to "Back to Post Categories", categories_path %></p>
+
+</div>

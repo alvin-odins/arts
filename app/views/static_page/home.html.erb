@@ -1,0 +1,33 @@
+<style>
+	body{
+		background-image: url(<%= asset_path ('sunny.jpg') %>);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+</style>
+
+	<div class="row">
+
+
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="home fluid-container">
+				<div class="focus-container">
+					<div class="blur"></div>
+						<div class="focus-box" style="background-image: url(<%= asset_path ('mrooms.jpg') %>); background-size: cover; background-repeat: no-repeat;">
+						<!--<%# if signed_in? %>
+							<h1>Create an Event</h1>-->
+							<!--<%# link_to "Create Event", new_event_path, class: "btn btn-lg btn-success" %>
+						<%# else %>-->
+							<h1>Art by ChinyereOd</h1>
+							<%# link_to "Sign up now!", new_user_registeration_path, class: 'btn btn-lg btn-success hov' %>
+							<!--<%# link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-success" %>
+						<%# end %>-->
+						</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+<!-- home.html.erb -->

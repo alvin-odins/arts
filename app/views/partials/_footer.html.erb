@@ -14,10 +14,9 @@
       </div>
       <div class="navbar-text pull-left col-md-5 col-sm-offset-2">
         <small> &copy; ChinyereOd
-          <script>
-              today = new Date();
-              document.write(today.getFullYear());
-          </script>
+          <%# Time.now.year %>
+          <%# Date.current.year %>
+          <%= Time.zone.now.year %>
          , ArtZone | <%# link_to 'Admin Login', admin_sessions_new_path %></small>
       </div>
     </div>

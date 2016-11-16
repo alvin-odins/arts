@@ -1,4 +1,4 @@
-<h2><%= @post.title %></h2>
+
 
 <%# if @post.image? %>
   <!-- <p>This art is done</p> -->
@@ -6,9 +6,9 @@
     <!-- <p>This art is still in developments</p> -->
 <%# end %>
 
-<%= image_tag @post.image, :id => "post-image" %>
 
-<div class="post-description">
+
+<!-- <div class="post-description">
   <% if @post.description %>
     <%= simple_format @post.description %>
   <% else %>
@@ -39,4 +39,49 @@
     <strong>Category:</strong>
     <%= @post.category %>
   </p>
+</div> -->
+
+
+<div class="container nav_fit">
+
+  <h2><%= @post.title %></h2>
+
+  <%= image_tag @post.image, :id => "post-image" %>
+  <div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <%# image_tag @post.image.url(:medium) %>
+        <div class="table-responsive">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><strong>Title:</strong></td>
+                <td><%= @post.title %></td>
+              </tr>
+              <tr>
+                <td><strong>Description:</strong></td>
+                <td><%= @post.description %></td>
+              </tr>
+              <tr>
+                <td><strong>Measurement:</strong></td>
+                <td><%= @post.measurement %></td>
+              </tr>
+              <tr>
+                <td><strong>Artist:</strong></td>
+                <td><%= @post.artist %></td>
+              </tr>
+              <tr>
+                <td><strong>Category:</strong></td>
+                <td><%= @post.category %></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <%# link_to 'Edit', edit_art_path(@post), class: "btn btn-default" %>
+        <%= link_to 'Back', post_path, class: "btn btn-default" %>
+      </div>
+    </div>
+  </div>
+</div>
 </div>

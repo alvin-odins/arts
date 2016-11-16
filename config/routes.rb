@@ -1,14 +1,22 @@
 Rails.application.routes.draw do
 
+  get 'about/index'
+
+  get 'about/resume'
+
+  get 'static_page/home'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :categories, :posts
 
-  root 'posts#index'
+  get 'static_page/home'
+
+  root 'static_page#home'
 
   # get "/allcategories", to: 'categories#index'
 
-  get "/allcategories", to: redirect("/")
+  #get "/allcategories", to: redirect("/")
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

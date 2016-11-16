@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   before_action :fetch_post, only: [:show, :edit, :update, :destroy]
 
   def show
-
+    
     respond_to do |format|
       format.html
       format.json { render json: @post }
