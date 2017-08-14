@@ -3651,7 +3651,7 @@ tbody.collapse.in {
     list-style: none;
     font-size: 14px;
     text-align: left;
-    background-color: #073642;
+    // background-color: #073642;
     border: 1px solid #cccccc;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -3682,8 +3682,9 @@ tbody.collapse.in {
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.75);
-    background-color: #002b36
+    // color: rgba(255, 255, 255, 0.75);
+    color: #000;
+    // background-color: #002b36
 }
 .dropdown-menu>.active>a,
 .dropdown-menu>.active>a:hover,
@@ -4614,15 +4615,17 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
     }
 }
 .navbar-default {
-    background-color: #073642;
+    // background-color: #073642;
     border-color: transparent
 }
 .navbar-default .navbar-brand {
-    color: #ffffff
+    // color: #ffffff
+    color: #000;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #ffffff;
+    // color: #ffffff;
+    color: #000;
     background-color: transparent
 }
 .navbar-default .navbar-text {
@@ -4630,7 +4633,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 .navbar-default .navbar-nav>li>a {
 //    color: rgba(255, 255, 255, 0.5);
-		color: #fff;
+		// color: #fff;
+    color: #000;
 		font-family: source-sans-pro, sans-serif;
     font-size: 11px;
     font-weight: 400;
@@ -4640,13 +4644,15 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    color: rgba(255, 255, 255, 0.75);
+    // color: rgba(255, 255, 255, 0.75);
+    color: #000;
     background-color: transparent
 }
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #ffffff;
+    // color: #ffffff;
+    color: #000;
     background-color: #062d36
 }
 .navbar-default .navbar-nav>.disabled>a,
@@ -4673,7 +4679,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
     background-color: #062d36;
-    color: #ffffff
+    // color: #ffffff
+    color: #000;
 }
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu>li>a {
@@ -5088,7 +5095,7 @@ a.badge:focus {
     padding-bottom: 30px;
     margin-bottom: 30px;
     color: inherit;
-    background-color: #073642
+    // background-color: #073642
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5131,7 +5138,7 @@ a.badge:focus {
     padding: 4px;
     margin-bottom: 20px;
     line-height: 1.42857143;
-    background-color: #002b36;
+    // background-color: #002b36;
     border: 1px solid #dddddd;
     border-radius: 4px;
     -webkit-transition: border .2s ease-in-out;
