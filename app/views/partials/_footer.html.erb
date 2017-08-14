@@ -1,24 +1,29 @@
-<div class="navbar navbar-inverse navbar-fixed-bottom">
+
+<section id="footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-2 col-sm-offset-2">
-        <div class="navbar-text pull-right footer-social-icons">
+      <p class="col-md-6">
+        &copy; ChinyereOd <%= Time.now.year %>
+        <%# Date.current.year %>
+        <%# Time.zone.now.year %>
+      </p>
+      <p class="col-md-6">
+        <ul class="list-inline">
           <a href="#" ><i class="fa fa-facebook-square"></i></a>
           <a href="#" ><i class="fa fa-twitter-square"></i></a>
           <a href="#" ><i class="fa fa-google-plus-square"></i></a>
           <a href="#" ><i class="fa fa-instagram"></i></a>
-        </div>
+        </ul>
+      </p>
+    </div>
 
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
-
-      </div>
-      <div class="navbar-text pull-left col-md-5 col-sm-offset-2">
-        <small> &copy; ChinyereOd
-          <%# Time.now.year %>
-          <%# Date.current.year %>
-          <%= Time.zone.now.year %>
-         , ArtZone | <%# link_to 'Admin Login', admin_sessions_new_path %></small>
-      </div>
+    <div class="row">
+      <p class="col-md-6">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p class="col-md-6">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
     </div>
   </div>
-</div>
+</section>

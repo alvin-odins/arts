@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'about/index'
+  get 'about/index', as: 'about'
 
   get 'about/resume'
 

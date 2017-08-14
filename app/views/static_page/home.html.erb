@@ -1,33 +1,152 @@
-<style>
-	body{
-		background-image: url(<%= asset_path ('sunny.jpg') %>);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-</style>
 
-	<div class="row">
+    <!-- Carousel
+    ================================================== -->
+<!--
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+       Indicators
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="<%# asset_path('WP_20170327_11_50_07_Pro.jpg') %>" width="190px"/>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Clad in spoils</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="<%# asset_path('WP_20170327_11_50_40_Pro.jpg') %>" width="190px"/>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>tears of the night</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="<%# asset_path('WP_20170327_12_00_14_Pro.jpg') %>" width="190px"/>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Nested bird</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <i class="fa fa-chevron-left" aria-hidden="true" style="margin-top:250px;"></i>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="fa fa-chevron-right" aria-hidden="true" style="margin-top:250px;"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+-->
+<!-- /.carousel -->
+		<div class="jumbotron">
+			<img src="<%= asset_path('chinyereOd2.jpg') %>" width="100%">
+		</div>
 
+		<section class="top-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<h1 class="intro">chinyere Od is
+							<span class="txt-rotate" data-period="2000" data-rotate='[ "an Artist.", "a Writer.", "a Designer.",  "fun!" ]'>
+							</span>
+						</h1>
+						<h4 class="intro-end">art made with <i class="fa fa-heart red" style="color: #BC0213;"></i></h4>
+					</div>
+					<div class="col-sm-6">
+						<h5 class="intro-end">ABOUT</h5>
+						<p></p>
+						<p></p>
+						<p class="about-para">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<p></p>
+						<p class="about-para">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<p class="text-center sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+		</section>
 
-		<div class="col-sm-4 col-sm-offset-4">
-			<div class="home fluid-container">
-				<div class="focus-container">
-					<div class="blur"></div>
-						<div class="focus-box" style="background-image: url(<%= asset_path ('mrooms.jpg') %>); background-size: cover; background-repeat: no-repeat;">
-						<!--<%# if signed_in? %>
-							<h1>Create an Event</h1>-->
-							<!--<%# link_to "Create Event", new_event_path, class: "btn btn-lg btn-success" %>
-						<%# else %>-->
-							<h1>Art by ChinyereOd</h1>
-							<%# link_to "Sign up now!", new_user_registeration_path, class: 'btn btn-lg btn-success hov' %>
-							<!--<%# link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-success" %>
-						<%# end %>-->
-						</div>
+		<section class="top-sec">
+			<div class="container">
+				<div class="row">
+					<h2 class="exhibits">Featured</h2>
+					<h2 class="collab">Exhibitons and Collaborations</h2>
+					<div class="col-sm-5">
+						<h3>
+							<span id="event"> UNN AT 50 - Sights and Sounds</span>
+						</h3>
+						<img src="<%= asset_path('212.jpg') %>" width="100%"/>
+					</div>
+					<div class="col-sm-5">
+						<h3>
+							<span id="event"> SACRED FLAGS & CLOTHS</span>
+						</h3>
+						<img src="<%= asset_path('213.jpg') %>" width="100%"/>
+					</div>
+<!--
+					<div class="col-sm-4">
+						<h3>
+							<span id="event"> LINKS - to the past</span>
+						</h3>
+						<img src="<%# asset_path('214.jpg') %>" width="100%"/>
+					</div>
+-->
+				</div>
+			</div>
+		</section>
+
+		<section class="top-sec">
+			<div class="container">
+				<div class="row">
+					<h2 class="text-center collab">ART EXPRESSION</h2>
+
+				</div>
+			</div>
+		</section>
+
+    <section id="mapnext" class="section-tw mapnext bg_gradient">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-7 col-md-6">
+					<h2 class="section">Lorem Ipsum</h2>
+					<h3>Abstractus Decorum</h3>
+					<p>Lorem ipsum magnus decorum alpha liberatum expressum infinitum edestrano filipinatus indentus</p>
+
+					<h3>Sagentum Brocconoiti</h3>
+					<p>Lorem ipsum magnus decorum alpha liberatum expressum infinitum edestrano filipinatus indentus</p>
+
+					<h3>Macmanimus Solistary</h3>
+					<p>Lorem ipsum magnus decorum alpha liberatum expressum infinitum edestrano filipinatus indentus</p>
+
+					<h3>Abstractus Decorum</h3>
+					<p>Lorem ipsum magnus decorum alpha liberatum expressum infinitum edestrano filipinatus indentus</p>
+				</div>
+
+				<div class="col-xs-12 col-sm-5 col-md-6">
+
 				</div>
 			</div>
 		</div>
+	</section>
 
-	</div>
+	<section>
 
-
-<!-- home.html.erb -->
+	</section>
