@@ -7501,3 +7501,43 @@ a, a:link, a:visited{
 .js-carousel-bullets-wrapper .bullet:hover{
     background-color: #fc6216;
 }
+
+// posts styles
+.art-coll{
+    height: 300px;
+  	background: linear-gradient(0deg, #ec5218, #1665c1);
+  	// background: linear-gradient(132deg, #ec5218, #1665c1);
+  	background: linear-gradient(132deg, #535364, #79589F);
+  	background-size: 400% 400%;
+  	animation: BackgroundGradient 30s ease infinite;
+}
+
+
+.art-coll h3{
+  color: #fff;
+    font-family: "josefin-sans";
+    // margin-top: 100px;
+    font-weight: 600;
+    letter-spacing: 4.5px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.art-coll .sub-coll{
+  color: #fff;
+    text-align: center;
+}
+
+.art-coll .brush{
+  color: #fff;
+    text-align: center;
+    font-size: 48px;
+}
+
+@keyframes BackgroundGradient {
+	0% {background-position: 0% 50%;} /* 0 seconds */
+
+	50% {background-position: 100% 50%;} /* 15 seconds because we set 30s */
+
+	100% {background-position: 0% 50%;} /* 30 seconds */
+}
